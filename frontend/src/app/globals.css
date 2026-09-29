@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* Design tokens per SPEC 4.2 */
+:root {
+  --surface-base: #f2f5f4;
+  --surface-raised: #ffffff;
+  --ink: #0f1b2d;
+  --ink-muted: #5b6573;
+  --rule: #d5dcdf;
+  --signal: #0e6e6a;
+  --insight: #c7861a;
+  --risk: #b4461f;
+  --positive: #2f7a4f;
+  --neutral-series: #8a96a3;
+}
+
+@theme inline {
+  --color-surface: var(--surface-base);
+  --color-surface-raised: var(--surface-raised);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-rule: var(--rule);
+  --color-signal: var(--signal);
+  --color-insight: var(--insight);
+  --color-risk: var(--risk);
+  --color-positive: var(--positive);
+  --color-neutral-series: var(--neutral-series);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html,
+body {
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+  font-feature-settings: "cv02", "cv03", "cv04";
+  background: var(--surface-base);
+  color: var(--ink);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-body), sans-serif;
+}
+
+/* Focus ring per SPEC 4.6 */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.sparkline path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* Muted table lines per SPEC */
+.rule-divider > * + * {
+  border-top: 1px solid var(--rule);
+}
+
+/* Keyboard shortcut hint chips */
+.kbd {
+  display: inline-block;
+  padding: 0.05rem 0.35rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 var(--rule);
+}

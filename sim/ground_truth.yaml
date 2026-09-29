@@ -1,0 +1,71 @@
+# HIDDEN GROUND TRUTH — the agent must never read this file.
+# Only sim/simulator.py, sim/outcomes.py, and backend/app/eval/oracle.py may load it.
+# The eval harness passes an "oracle" mode that reads this; the agent's memory-on / off
+# runs never touch it.
+
+base_reply_rate: 0.06
+
+# Multiplier applied to base_reply_rate when the agent's chosen angle matches the
+# brand's real (hidden) archetype. "other" catches all non-matching angles.
+angle_fit:
+  reseller_invasion:
+    brand_protection: 5.0
+    map_enforcement: 2.0
+    growth_partnership: 0.6
+    other: 1.2
+  stockout_prone:
+    inventory_planning: 4.0
+    growth_partnership: 0.7
+    other: 1.1
+  weak_converter:
+    listing_and_reviews: 3.5
+    advertising: 1.5
+    other: 1.0
+  price_erosion:
+    map_enforcement: 4.0
+    brand_protection: 2.5
+    other: 1.0
+  under_advertised:
+    advertising: 4.0
+    growth_partnership: 1.4
+    other: 1.0
+  healthy_riser:
+    growth_partnership: 1.2
+    other: 0.8
+  distractor:
+    other: 0.5
+
+# Some categories are much less receptive to outreach.
+# health_household is the intentional "supplements rarely reply" story.
+category_modifier:
+  Home_and_Kitchen: 1.0
+  Pet_Supplies: 1.3
+  Health_and_Household: 0.25
+
+# Brands in the sweet spot reply more.
+size_sweet_spot:
+  min_ratings: 50
+  max_ratings: 300
+  multiplier: 1.6
+
+# reply_probability *= 1 + severity_effect_slope * severity
+severity_effect_slope: 1.5
+
+# Fraction of brands that behave as "we handle Amazon in-house" and reject
+# generic pitches even when angle is right.
+in_house_flag_rate: 0.15
+
+# Simulated reply latency in weeks (uniform integer range, both inclusive).
+reply_delay_weeks: [1, 3]
+
+# Conditional probabilities.
+meeting_given_reply: 0.45
+signed_given_meeting: 0.25
+not_now_share_of_replies: 0.20
+declined_share_of_replies: 0.25   # otherwise treated as "reply, no next step"
+
+# Absolute noise floor: after everything, coin-flip to invert some outcomes.
+noise: 0.15
+
+# Simulator seed override (falls back to $SIM_SEED).
+seed: 42

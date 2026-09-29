@@ -1,0 +1,275 @@
+{
+  "top_n": 10,
+  "weeks": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "off": [
+    {
+      "week": 41,
+      "mode": "off",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 42,
+      "mode": "off",
+      "reply_rate": 0.3,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 43,
+      "mode": "off",
+      "reply_rate": 0.5,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 44,
+      "mode": "off",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 45,
+      "mode": "off",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.8
+    },
+    {
+      "week": 46,
+      "mode": "off",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 47,
+      "mode": "off",
+      "reply_rate": 0.5,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 48,
+      "mode": "off",
+      "reply_rate": 0.2,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 0.8
+    },
+    {
+      "week": 49,
+      "mode": "off",
+      "reply_rate": 0.2,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 0.8
+    },
+    {
+      "week": 50,
+      "mode": "off",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 51,
+      "mode": "off",
+      "reply_rate": 0.3,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 52,
+      "mode": "off",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 1.0
+    }
+  ],
+  "oracle": [
+    {
+      "week": 41,
+      "mode": "oracle",
+      "reply_rate": 0.6,
+      "meeting_rate": 0.5,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 42,
+      "mode": "oracle",
+      "reply_rate": 0.5,
+      "meeting_rate": 0.3,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 43,
+      "mode": "oracle",
+      "reply_rate": 0.7,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 44,
+      "mode": "oracle",
+      "reply_rate": 0.3,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 45,
+      "mode": "oracle",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 46,
+      "mode": "oracle",
+      "reply_rate": 0.5,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 47,
+      "mode": "oracle",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 48,
+      "mode": "oracle",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 49,
+      "mode": "oracle",
+      "reply_rate": 0.7,
+      "meeting_rate": 0.3,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 50,
+      "mode": "oracle",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 51,
+      "mode": "oracle",
+      "reply_rate": 0.6,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 52,
+      "mode": "oracle",
+      "reply_rate": 0.5,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 1.0
+    }
+  ],
+  "on": [
+    {
+      "week": 41,
+      "mode": "on",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 42,
+      "mode": "on",
+      "reply_rate": 0.3,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 43,
+      "mode": "on",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 1.0
+    },
+    {
+      "week": 44,
+      "mode": "on",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 45,
+      "mode": "on",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.8
+    },
+    {
+      "week": 46,
+      "mode": "on",
+      "reply_rate": 0.4,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 47,
+      "mode": "on",
+      "reply_rate": 0.3,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 48,
+      "mode": "on",
+      "reply_rate": 0.2,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 0.8
+    },
+    {
+      "week": 49,
+      "mode": "on",
+      "reply_rate": 0.2,
+      "meeting_rate": 0.1,
+      "angle_accuracy": 0.8
+    },
+    {
+      "week": 50,
+      "mode": "on",
+      "reply_rate": 0.2,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 51,
+      "mode": "on",
+      "reply_rate": 0.3,
+      "meeting_rate": 0.2,
+      "angle_accuracy": 0.9
+    },
+    {
+      "week": 52,
+      "mode": "on",
+      "reply_rate": 0.1,
+      "meeting_rate": 0.0,
+      "angle_accuracy": 1.0
+    }
+  ]
+}

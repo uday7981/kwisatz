@@ -1,0 +1,48 @@
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Real & derived data
+data/raw/
+data/sim/
+data/cache/
+data/*.db
+data/*.sqlite
+data/*.sqlite-*
+brand_alias.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/next-env.d.ts
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local tool state (not for public repo)
+.claude/
+.agents/
+
+# Build artefacts
+dist/
+build/
+*.log
